@@ -1,1 +1,1 @@
-export { default as getHomeData } from './getData';
+export { getHomeData } from './home';

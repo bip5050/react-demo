@@ -17,3 +17,16 @@
 .Footer {
   color: #AAAAAA;
 }
+.align-items-center h2{
+    text-align: center;
+    line-height: 36px;
+    padding: 0 5%;
+}
+@media (min-width:1400px){
+  .align-items-center h2{
+    max-width: 50%;
+      text-align: center;
+      line-height: 36px;
+      padding: 0
+  }
+}

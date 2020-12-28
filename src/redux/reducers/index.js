@@ -1,10 +1,17 @@
 import { combineReducers } from 'redux';
-import home from './home';
-import about from './about';
+
+
+import header from './header';
+import signup from './auth';
+import Home from './home';
+
+
 
 const reduxState = combineReducers({
-  home,
-  about
+    Home,
+    header,
+    signup,
+
 });
 
 export default reduxState;

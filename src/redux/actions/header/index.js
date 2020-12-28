@@ -1,0 +1,1 @@
+export { getHeaderData, getAdressList } from './header';

@@ -1,0 +1,28 @@
+.mainloader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center; 
+}
+
+.mainloader:after {
+    content: "";
+    display: block;
+    left: 0;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+}
+.loading-inner{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

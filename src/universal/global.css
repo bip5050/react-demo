@@ -1,0 +1,221 @@
+html, body{  overflow-x: hidden; scroll-behavior: smooth;}
+*{padding: 0; margin: 0; outline: 0;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body{font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; color: #333333;}
+
+img{max-width: 100%;}
+figure{padding: 0; margin: 0; display: inline-block;}
+a{color: #209DE2;}
+a:hover{text-decoration: none; color: #209DE2;}
+
+
+/* Loder */
+.loader,
+.loader:before,
+.loader:after {
+  background: #209de0;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #209de0;
+  text-indent: -9999em;
+  margin: 150px auto;
+  position: relative;
+  font-size: 8px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+.Loginp{
+  background: #f1f1f1; 
+  padding: 10% 0 0 0; 
+  min-height: 100vh;
+}
+.Loginp .expWrapper{
+  width: 30%;
+  max-width: 500px;
+  margin: 0 auto ;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 10px 0 #707070;
+  box-shadow: 0 0 10px 0 #707070;
+}
+
+.input-group{margin-bottom: 10px;}
+.ltbox{
+  width: 100%; 
+  height: 32px; 
+  border: 1px solid #ccc;
+  padding: 0 8px;
+  border-radius:4px;
+}
+.ltbox.t-pass{padding-right: 24px;}
+.pass_wrap{width: 100%; position: relative;}
+.pass_wrap a{position: absolute; right: 5px; top: 5px;}
+
+.submitBtn{width: 100%; cursor: pointer; height: 32px; border-radius:4px; font-size: 16px; margin:5px 0 10px; background: #209de0; color: #fff; border: none;}
+
+.header{ background: #001529; color: #a6adb4; height: 50px;}
+.header .wapper{width: 96%; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+.header nav{height: 100%;}
+.header nav a{display: inline-block; padding: 0 18px; font-size: 16px; height: 100%;  line-height: 42px; cursor: pointer;}
+.header nav a.active, .header nav a:hover{background: #1890ff; color: #fff!important;}
+.uPan{display: flex; cursor: pointer; height: 103%; align-items: center;  position: relative;}
+.uPan >span{background: #a6adb4; height: 25px;}
+.uPan ul{position: absolute; top: 52px; list-style: none; display: none; width: 150px; right: 0;}
+.uPan ul li a{padding: 5px; display: block; background: #333; color:#a6adb4;}
+.uPan:hover ul{display: block;}
+
+
+.dPage{ min-height: 100vh;}
+.dPage .wrapper{ width: 100%; display: flex;}
+.dPage .wrapper aside{width: 20%; background: #f6f6f6; min-height: 100vh;}
+.dPage .wrapper aside .lmHeader{display: block; padding: 15px; font-size: 16px; color: #1890ff; font-weight: 600;}
+.dPage .wrapper aside .lmHeader img{display: inline-block; vertical-align: middle;}
+.dPage .wrapper aside .sideNav {list-style: none; }
+.dPage .wrapper aside .sideNav >li >span{display: block; border-bottom: 1px solid #ccc; padding: 15px; font-size: 16px; color: #1890ff; font-weight: 600;}
+.dPage .wrapper aside .lNav{ background: #fff; list-style: none; display: none;}
+
+.dPage .wrapper aside .lNav li a{padding: 15px 15px 15px 45px; font-size: 16px; border-right: 3px solid transparent; display: block; color: #262626;}
+.dPage .wrapper aside .lNav li.active a{background:aliceblue; border-right: 3px solid #1890ff; }
+.dPage .wrapper aside .lNav li:hover a{background: #e6f7ff;}
+
+.dPage .wrapper aside .sideNav >li.openChild .lNav{display: block;}
+
+
+
+
+
+
+.dPage .wrapper main{width: 80%; padding: 20px;}
+
+.dPage .wrapper main .topPan{ margin-bottom: 15px; display: flex; align-items: center;}
+.dPage .wrapper main .topPan a, .dPage .wrapper main .topPan span{padding:10px 15px; display: inline-block;}
+.dPage .wrapper main .topPan a.active{ background: #1890ff; color: #fff;}
+/* .dPage .wrapper main .topPan .searchpan{margin-left: auto;} */
+.dPage .wrapper main .topPan .searchpan input{height:34px; border: 1px solid #ccc; padding: 0 10px;}
+.dPage .wrapper main .topPan .searchpan button{border: none; color: #fff; background:#1890ff; padding: 0 10px; height:34px;}
+.dPage .wrapper main .topPan .shortBy{margin-left: auto;}
+.dPage .wrapper main .topPan .shortBy select{margin-left: 10px; height: 34px; padding: 0 5px;}
+
+.filterby{display: flex; align-items: center; justify-content: flex-end; padding: 0 0 15px 0;}
+.filterby span{display: inline-block; margin-left: 25px;}
+.filterby span input[type="checkbox"]{margin-left: 10px;}
+.bline{border-bottom: 1px solid #ddd;}
+
+.sTable{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.sTable th{
+  padding: 10px;
+  text-align: left;
+  background: #f1f1f1;
+  font-weight: 900;
+  border-bottom: 1px solid #ddd;
+}
+.sTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.sTable tr:hover {background: #fafafa; cursor: pointer;} 
+.sTable .aRow td {background: #e6f7ff;}
+.sTable .cpan {display: none;}
+.sTable .cpan.show{display: table-row;}
+
+
+input[type="checkbox"]{width: 16px; height: 16px; border : 1px solid #f1f1f1; cursor: pointer;display: inline-block; vertical-align: bottom; }
+
+.cBoxAll input{ display: none;}
+.cBoxAll label{width: 16px; cursor: pointer; height: 16px; border: 1px solid #666; border-radius: 2px; margin: 0; background: #fff; position: relative;}
+.cBoxAll input[type="checkbox"]:checked +label:after{ content: ''; position: absolute; top: 2px; left: 2px; width: 10px; height: 10px;  background: #1890ff;}
+
+.pagiBar{display: block; text-align: right;}
+.pagination{ display: inline-flex; margin-top: 20px; }
+.pagination li{ width: 26px; height: 26px; cursor: pointer; line-height: 22px; text-align: center; margin-left: 6px; border:1px solid #d9d9d9; border-radius: 2px;}
+.pagination li.active{ border: 1px solid #1890ff; background: #e6f7ff;}
+
+
+.hPan{position: relative;}
+.hPan .tTipBox{background: #fff; width: 400px; display: none; z-index: -9; opacity: 0; position: absolute; top: -50px; left:60%;-webkit-box-shadow: 0 0 5px 0 #9E9E9E; box-shadow: 0 0 5px 0 #9E9E9E;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.hPan .tTipBox h5{font-size: 16px; font-weight: 600;}
+.hPan .tTipBox::before{content: ''; position: absolute; left: -10px; top: 58px; -webkit-box-shadow: 0 0 5px 0 #9E9E9E; box-shadow: 0 0 5px 0 #9E9E9E; z-index: 1; width: 20px; height: 20px; transform: rotate(-45deg); background: #fff;}
+.hPan .tTipBox .tWrap{padding: 10px; background: #fff; position: relative; z-index: 2;}
+
+.hPan:hover .tTipBox{ z-index: 5; opacity: 1; left:45%; display: block;}
+
+.iMethod table{width: 100%;}
+.iMethod table th{font-weight: 600; padding: 8px;}
+.iMethod table td{ padding: 8px;}
+.iMethod strong{display: block; margin:15px 0 5px;}
+.iMethod p{margin-bottom: 15px;}
+.iMethod textarea{width: 100%; border: none; resize: none;}
+.expMod .mark{ background: #1890ff; padding: 8px 15px; color: #fff;}
+.expMod .closeb{background: none; border: none; font-weight: 600; padding: 8px 15px;}
+
+
+.tabWrap {width: 100%;  margin: 5px 15px;}
+.tabWrap .nav-tabs {border-bottom: none;}
+.tabWrap .nav-tabs li a{ padding: 10px 15px; background:rgba(0,0,0,.03); display: inline-block; margin-right: 3px; color: #000; font-size: 14px;}
+.tabWrap .nav-tabs li a.active{background: #ccc;}
+.tabWrap .tab-content{padding: 15px; border: 1px solid #ccc;}
+.tabWrap .table thead th{border: none;}
+.tabWrap .bgRow{background:rgba(0,0,0,.03);}
+
+.uploadFile{cursor: pointer;}
+
+
+@media only screen and (max-width: 370px){
+ 
+
+}

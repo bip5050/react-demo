@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "foodjets-dev-local",
+  "private_key_id": "761ae1f74d714977f896c1b7df260baae2c59748",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCNbPSP4Vz3wtsb\nlnshwhrv/7kR7kXCslZOv+6ODYxnkR97pzaiKhc44GiQ7WFkGE7obvYfzDEuXQsG\n7wHIoW+pokvouiufCmw98M0DwXTk5F+3HUnuKZIJXvDoymzA4Ob697WA2kJl7PYx\nUfLW0yhBFa1CSxwOaOBWpOr5lgNBw1DUtjdp1GY7zdZvDzeQn7rCb4erfH4QqM2o\nq28j7hA1HpcB1+Omi92Brg9tUDasjQNxl0ZKCuTZan7Ik0EMF0PxjygzuKm1Mzwb\nNXtbs7ZKJSZUPM21PzCil+BjjJ81kq3nOdWmxsxc109jRpqRPM8Mtj8nw12Uz9Ed\nA0rvhDlfAgMBAAECggEAS/AzKYbDGq5gZGHa3/eP60qOn1gn0TFdMo/QkiooN/wu\nwYC5zz12lq24uAkegFalGB1svwovZkvDfgecF5THlnh09hPxFEbOdDv2eYvJLpaJ\n5pMtfVqI9csq5HS9DJw2qo+TwApyGLSyRS1RjZR4SupOzAf0mrAptZx8J2Qrf4WJ\nebRkekIDIZql3Me/vUBhCPPcJheBYF1Yg9q9O6oc2aCiBqujdsXMqexjnuHa4zKj\nMYlA94k8pKUCHOeT44H9SgYR10zq9xo4aRjEmsg3CD2WH4KneeF+mbIb1jCXuVpd\nZgpnQiTwC8v8vAeStMal8b3WRGQoSf64qK1W9nPwAQKBgQDRg4jGBBfy8CFTRECH\nDNgKZaDzxVEpWd+tf7aZ80McY7cAK1JpE6a1AqpgAD7ZtSs6RT+bF7foogUEKkA0\n9uSs32vwvhOvjfOQJYAt0p7vrEf3WB0dV+Kr4fIf7TYi3kUPxXYGDJqVYBJIUu4s\npegUNsRSmjj31fg/NVNAc4pMAQKBgQCszfweV/f6KJT14V0nwYNY8FzDSZbQBdBS\nPtgphD7Q7hIzQEjoa5KuQKWvBiIgPkVh1z0Y96xcrleBgERnkA4jOhhr/Pbyll6u\nMNu3SP+x4VNwn+cgo9Uhkum3YZKMClmK+0/P6xiZvqDLlcNOJ6w9iCZjyPy1Z0LA\ngwEoU7YFXwKBgFb5aZ/6Nw7szIjKfpcRp+W5BrXrpaOq4YYezGjgaW2xn1h8o3tn\nYv8lmiC8OVsbMFTCRoNVt0zlZXuzJnBWRdvV6/NGlNl97ixaxPlAxCXuuPlfJMb3\nouuDooXKbXzQFI9Vg4dDWDDGbxCDDMiQHuW1To6T4y5PLvzeYC8TR8gBAoGAbOcr\n2pup5fepWQP8R0/HTUe9zj0UVGk1jn+YjyGOzPEcezwqNn+E41hOkm0VGKjl5PFW\nyeNcttQQxcZmVbYNktnMBlJX9y4Y4UJdVbclnZ7ZjQLZEFLvwMbrj+xoBOWI5PPY\nqroIuOvQPj1V5m1OOUESoJRL3q8C/HwTQKzw65UCgYAKI8j7XFQ8WOyHzUM1u9wG\n7nDKUNOen5gYlY9KK7tBWx+I3nF5LZK//dD/AfDljNvOkJSqZtAifr5sLC8ydO/I\nfglsCLg3jXEQ4IwsF026uYJJhdPxlFd3OpofSWtX2U4RflZm/YpOZ5GxmW/Mem2y\n8W/6/jEeaoN6D0vWjE3/Xw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "devservice@foodjets-dev-local.iam.gserviceaccount.com",
+  "client_id": "100998270600158323512",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/devservice%40foodjets-dev-local.iam.gserviceaccount.com"
+}
