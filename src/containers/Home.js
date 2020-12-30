@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Login from '../components/login';
+import Home from '../components/home';
 import { do_login } from '../redux/actions/auth';
 
 const mapStateToProps = (state, ownProps) => {
@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Login);
+)(Home);

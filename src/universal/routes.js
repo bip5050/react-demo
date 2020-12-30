@@ -12,7 +12,7 @@ import Notifications, {notify} from 'react-notify-toast';
 
 
 
-import Login from '../containers/Login';
+import Home from '../containers/Home';
 
 
 import _ from 'lodash';
@@ -24,7 +24,7 @@ SentryInitialize();
 export const routes = [{
     path: '/',
     exact: true,
-    component: Login
+    component: Home
   }, {
     component: NotFound
   }
@@ -32,8 +32,8 @@ export const routes = [{
 
 export const publicroutes = [
    {
-  path: '/login',
-  component: Login    
+  path: '/home',
+  component: Home    
 }
 
 ];
