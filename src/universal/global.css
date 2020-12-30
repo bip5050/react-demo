@@ -20,6 +20,7 @@ a:hover{text-decoration: none; color: #209DE2;}
   padding: 15px;
   border: 1px solid #ccc;
   border-bottom: none;
+<<<<<<< HEAD
 
 }
 .cTable.oneCol th, .cTable.oneCol td, .cTable.oneCol .subTable td{width: 72%;}
@@ -40,4 +41,25 @@ a:hover{text-decoration: none; color: #209DE2;}
 
 .tac{text-align: center;}
 
+=======
+
+}
+.cTable.oneCol th, .cTable.oneCol td, .cTable.oneCol .subTable td{width: 72%;}
+.cTable.twoCol th, .cTable.twoCol td, .cTable.twoCol .subTable td{width: 54%;}
+.cTable.threeCol th, .cTable.threeCol td, .cTable.threeCol .subTable td{width: 36%;}
+.cTable.fourCol th, .cTable.fourCol td, .cTable.fourCol .subTable td{width: 18%;}
+
+.cTable th:first-child, .cTable td:first-child{ width: 28%;}
+.cTable th{text-align: center;}
+.cTable th span{display: block; font-size: 12px;}
+
+.cTable td.st{padding: 0; border-top: none; border-bottom: none;} 
+.subTable{width: 100%; display: none;}
+.stOpen .subTable{ display:table;}
+.subTable tr:nth-child(odd) {background-color: #f2f2f2;}
+.subTable td{width: 18%;}
+.subTable td:first-child{ width: 28%!important;}
+
+.tac{text-align: center;}
+>>>>>>> 85eba7e4807bf76637321c4b3fa60e44df01e32e
 
