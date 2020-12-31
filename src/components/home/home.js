@@ -287,8 +287,6 @@ export default class home extends Component {
   componentWillReceiveProps(props) {
     if (!!props.data && !!props.data.isSuccess) {
 
-      // this.props.history.push('/dashboard');
-      window.location.href = "/dashboard";
 
     }
   }
