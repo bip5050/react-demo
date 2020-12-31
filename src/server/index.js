@@ -1,27 +1,36 @@
 import Express from 'express';
 import handleRender from './handleRender';
 import Proxy from 'http-proxy-middleware';
-
-
+import * as Sentry from '@sentry/node';
 import config from '../config';
 
+Sentry.init({
+  dsn: config.sentry_dsn
+});
 
-
-const ESM_SERVICE_URL = process.env.ESM_SERVICE_URL || 'http://localhost:8000';//http://localhost:4737 http://192.168.0.67:5656
+const NEVENS_SERVICE_URL = process.env.NEVENS_SERVICE_URL || "http://localhost:4737" 
 
 // this is a very simple express app designed only for the purpose of this repo
 const app = Express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // const router = Express.Router();
 
 // http proxy
 const onError = function(err, req, res) {
+  Sentry.captureException(err);
   res.writeHead(500, { 'Content-Type': 'text/plain' });
   res.end('Something went wrong.');
 };
 
-
+app.use('/api', Proxy({
+  target: NEVENS_SERVICE_URL,
+  changeOrigin: true,
+  pathRewrite: {
+      '^/api': '/api'
+  },
+  onError
+}));
 
 // const yes = require('appengine-express-https');
 // app.use(yes());
@@ -30,11 +39,8 @@ app.use('/dist', Express.static('dist'));
 app.use('/img', Express.static('img'));
 app.use('/assets', Express.static('assets'));
 
-app.use('/liveness_check', function(req, res) {
-  res.status(200).send('ok');
-});
-
-app.use('/readiness_check', function(req, res) {
+app.use('/_ah/health', function(req, res) {
+  res.set('Content-Type', 'text/plain');
   res.status(200).send('ok');
 });
 

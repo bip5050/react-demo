@@ -1,4 +1,3 @@
-
 let envSetup   = '';
 let env         = process.env.NODE_ENV;
 if(env  === 'production')
